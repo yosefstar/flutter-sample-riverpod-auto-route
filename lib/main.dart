@@ -7,6 +7,7 @@ import 'app.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   usePathUrlStrategy();
+
   runApp(
     const ProviderScope(
       child: App(),
