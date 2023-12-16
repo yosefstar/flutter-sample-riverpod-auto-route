@@ -6,11 +6,11 @@ part of 'auth.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$firebaseAuthHash() => r'c6d67aebc675b1865cba720c3c92cb88fe058f1e';
+String _$firebaseAuthHash() => r'53e59b76223253054af2af6d3be9000b74c29d8f';
 
 /// See also [firebaseAuth].
 @ProviderFor(firebaseAuth)
-final firebaseAuthProvider = AutoDisposeProvider<FirebaseAuth>.internal(
+final firebaseAuthProvider = Provider<FirebaseAuth>.internal(
   firebaseAuth,
   name: r'firebaseAuthProvider',
   debugGetCreateSourceHash:
@@ -19,12 +19,12 @@ final firebaseAuthProvider = AutoDisposeProvider<FirebaseAuth>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef FirebaseAuthRef = AutoDisposeProviderRef<FirebaseAuth>;
-String _$firebaserUserHash() => r'7f3a0901e79e6d0bdcdd6a410322ea8bedd0f802';
+typedef FirebaseAuthRef = ProviderRef<FirebaseAuth>;
+String _$firebaserUserHash() => r'57f7c587b7b54b4da3f0fd0f98e8efb8027d01c6';
 
 /// See also [firebaserUser].
 @ProviderFor(firebaserUser)
-final firebaserUserProvider = AutoDisposeStreamProvider<User?>.internal(
+final firebaserUserProvider = StreamProvider<User?>.internal(
   firebaserUser,
   name: r'firebaserUserProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -34,6 +34,6 @@ final firebaserUserProvider = AutoDisposeStreamProvider<User?>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef FirebaserUserRef = AutoDisposeStreamProviderRef<User?>;
+typedef FirebaserUserRef = StreamProviderRef<User?>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
